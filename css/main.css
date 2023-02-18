@@ -75,21 +75,7 @@ body {
     padding-right: 16px;
 }
 
-.hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero-mobile.jpg);
-    background-color: rgba(46, 47, 66, 0.7);
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
-@media (min-device-pixel-ratio: 2) and (max-width: 479px),
-(-webkit-min-device-pixel-ratio: 2) and (max-width: 479px),
-(min-resolution: 192dpi) and (max-width: 479px),
-(min-resolution: 2dppx) and (max-width: 479px) {
-    .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tablet@2x.jpg);
-    }
-}
 
 .logo-header {
     font-family: 'Raleway', sans-serif ;
@@ -143,6 +129,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+
 .icon-hamburger {
     stroke: var(--primary-dark-color);
 }
@@ -279,7 +266,21 @@ body {
     }
 
 /* ====================HERO================== */
+.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero-mobile.jpg);
+    background-color: rgba(46, 47, 66, 0.7);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+@media (min-device-pixel-ratio: 2) and (max-width: 479px),
+(-webkit-min-device-pixel-ratio: 2) and (max-width: 479px),
+(min-resolution: 192dpi) and (max-width: 479px),
+(min-resolution: 2dppx) and (max-width: 479px) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero-mobile@2x.jpg);
+    }
+}
 .hero-wrapper {
     text-align: center;
 }
@@ -559,11 +560,6 @@ body {
 }
 
 
-
-.form-modal {
-    
-}
-
 .modal-field {
     display: flex;
     flex-direction: column;
@@ -780,7 +776,7 @@ body {
 (min-resolution: 192dpi) and (min-width: 480px),
 (min-resolution: 2dppx) and (min-width: 480px) {
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg-hero-tablet@2x.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-bg-tablet@2x.jpg);
     }
 }
 
